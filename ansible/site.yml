@@ -1,1 +1,8 @@
-HELLO I AM ANSIBLE USER
+---
+- name: Configure Linux defaults
+  hosts: localhost
+  connection: local
+  become: true
+
+  roles:
+    - tmux
