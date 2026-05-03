@@ -15,6 +15,7 @@ Projektin dokumentaatio (Robin & Andro) -> readme.md tiedosto toimii virallisena
 * UFW/firewall konffaaminen (Robin)
 * Auto update (Robin)
 * FAIL2BAN -> SSH (Robin)
+* Projektin kotisivuston tekeminen
 
 UFW firewall käyttöön ottaminen esim. 22 portti on auki, fail2ban käytössä
 
