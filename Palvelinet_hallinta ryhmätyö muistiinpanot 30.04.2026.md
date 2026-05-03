@@ -5,7 +5,7 @@ Projektin tarkoitus on tehdä ansiblella konfiguraatio mikä on automatisoitu.
 
 Idea on että käyttäjä voi:
 
-Kloonata repon yhdellä komennolla -> konfiguraatio asennetaan yhdellä komennolla (tässä kohtaa voit valita minkä version haluat asentaa flageilla. Ilman temuxia vai temuxin kanssa) -> konfiguraatio asennetaan, homma done.
+Kloonata repon yhdellä komennolla -> konfiguraatio asennetaan yhdellä komennolla (tässä kohtaa voit valita minkä version haluat asentaa flageilla. Ilman temuxia vai temuxin kanssa) -> konfiguraatio asennetaan -> käyttäjä voi käyttää asentamia työkaluja
 
 Projektin dokumentaatio (Robin & Andro) -> readme.md tiedosto toimii virallisena projektin dokumentaationa
 
