@@ -1,1 +1,15 @@
-TMUX CONFIGURATION
+- name: Install TMUX
+  ansible.builtin.apt:
+    name: tmux
+    state: present
+    update_cache: true
+
+- name: Copy tmux config
+  ansible.builtin.copy:
+    src: tmux.conf
+    dest: "{{ ansible_user_dir }}/.tmux.conf"
+    owner: "{{ ansible_user_id }}"
+    group: "{{ ansible_user_id }}"
+    mode: '0644'
+    backup: true
+  become: false
