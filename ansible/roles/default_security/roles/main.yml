@@ -1,0 +1,46 @@
+- apt:
+    name:
+    - fail2ban
+    - ufw
+    - unattended-upgrades
+    - openssh-server
+    state: present
+
+- copy:
+    src: jail.local
+    dest: /etc/fail2ban/jail.local
+    owner: root
+    group: root
+    mode: "0644"
+  notify: restart fail2ban
+
+- command: ufw default deny incoming
+  changed_when: false
+
+- command: ufw allow 22/tcp
+  changed_when: false
+
+- command: ufw --force enable
+  changed_when: false
+
+- copy:
+    src: 50unattended-upgrades
+    dest: /etc/apt/apt.conf.d/50unattended-upgrades
+    owner: root
+    group: root
+    mode: "644"
+
+- copy:
+    src: 20auto-upgrades
+    dest: /etc/apt/apt.conf.d/20auto-upgrades
+    owner: root
+    group: root
+    mode: "644"
+
+  copy:
+    src: 99-hardened.conf
+    dest: /etc/ssh/sshd_config.d/99-hardened.conf
+    owner: root
+    group: root
+    mode: "0644"
+  notify: restart ssh
