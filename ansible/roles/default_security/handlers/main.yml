@@ -5,5 +5,5 @@
 
 - name: restart ssh
   systemd:
-    name: openssh-server
+    name: ssh
     state: restarted
