@@ -37,7 +37,7 @@
     group: root
     mode: "644"
 
-  copy:
+- copy:
     src: 99-hardened.conf
     dest: /etc/ssh/sshd_config.d/99-hardened.conf
     owner: root

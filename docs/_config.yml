@@ -1,0 +1,4 @@
+title: Linux defaults with ansible
+description: One-shot Ansible playbook for sane Linux defaults — hardened SSH, UFW, fail2ban, automatic updates, and a usable tmux config.
+theme: jekyll-theme-cayman
+show_downloads: true
