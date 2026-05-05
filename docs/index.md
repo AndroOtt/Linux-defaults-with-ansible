@@ -34,7 +34,7 @@ Run one command and the playbook configures:
 ```bash
 sudo apt update
 sudo apt install -y git ansible
-git clone https://github.com/<your-user>/Linux-defaults-with-ansible.git
+git clone https://github.com/AndroOtt/Linux-defaults-with-ansible.git
 cd Linux-defaults-with-ansible/ansible
 sudo ansible-playbook site.yml
 ```
@@ -62,8 +62,8 @@ tmux -V
 
 The complete docs — requirements, role-by-role breakdown, file layout, and
 the project task split — live in the
-[README on GitHub](https://github.com/andro-and-robin/Linux-defaults-with-ansible#readme).
+[README on GitHub](https://github.com/AndroOtt/Linux-defaults-with-ansible#readme).
 
 ## Source
 
-[github.com/andro-and-robin/Linux-defaults-with-ansible](https://github.com/andro-and-robin/Linux-defaults-with-ansible)
+[github.com/AndroOtt/Linux-defaults-with-ansible](https://github.com/AndroOtt/Linux-defaults-with-ansible)

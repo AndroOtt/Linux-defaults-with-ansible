@@ -62,7 +62,7 @@ chmod 600 ~/.ssh/authorized_keys
 ### 3. Clone the repository
 
 ```bash
-git clone https://github.com/<owner>/Linux-defaults-with-ansible.git
+git clone https://github.com/AndroOtt/Linux-defaults-with-ansible.git
 cd Linux-defaults-with-ansible/ansible
 ```
 
