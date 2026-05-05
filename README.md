@@ -14,7 +14,7 @@ Running the playbook applies two roles to the local machine:
 - **`default_security`** — installs and configures `fail2ban`, `ufw`,
   `unattended-upgrades`, and `openssh-server`. Default UFW policy is set to
   deny incoming traffic, port 22/tcp is allowed, and the firewall is enabled.
-  SSH is hardened (no root login, keys only, idle-client
+  SSH is hardened (no root login, no password authentication, keys only, idle-client
   timeout). APT is configured to download and apply security updates
   automatically.
 - **`tmux`** — installs `tmux` and drops a system-wide `tmux.conf` with
